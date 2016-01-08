@@ -9,66 +9,68 @@ $backgroundcolor:complement($yellowcolor);
 
 //mixins
 @mixin fontstyles{
-	h1{
-		color:$pinkcolor;
-		font-size: $headfontwidth;
-	}
-	h2{
-		color:yellow;
-		font-size: $secfontwidth;
-		text-align: center;
-	}
-	p 
-	{
-		color:$yellowcolor;
-	}
+  h1{
+    color:$pinkcolor;
+    font-size: $headfontwidth;
+  }
+  h2{
+    color:yellow;
+    font-size: $secfontwidth;
+    text-align: center;
+  }
+  p 
+  {
+    color:$yellowcolor;
+  }
 }
 
 @mixin navigation_style {
-	a{ text-align: center;
+  a{ text-align: center;
     display: block;
     margin: 0 auto;
     color:complement($backgroundcolor);
+  }
 }
-}
+
 
 //-----------------------------------
 
 body {
-	background:$backgroundcolor;
+  background:$backgroundcolor;
 }
 
 .allcontent{
 
-.main_headerarea{
-	height:450px;
-background:url(../images/piczero.png);
-background-size:100%;
+  .main_headerarea{
+    height:450px;
+    background:url(../images/piczero.png);
+    background-size:100%;
 
-	@include fontstyles;
-	 h1 {
-		text-align: center;
-		font-size: 40px;
-		text-align: center;
-		padding-bottom: 10px;
-		border: 1px solid red;
-		padding-top: 200px;
-	}
-}
+    @include fontstyles;
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      text-align: center;
+      padding-bottom: 10px;
+      border: 1px solid red;
+      padding-top: 200px;
+    }
+  }
 }
 
 nav{
-@include navigation_style;
-	}
+  @include navigation_style;
+}
 
 
 .firstwrite{
-	@include fontstyles;
+  @include fontstyles;
 }
 
 .left {
-	@include fontstyles;
+  @include fontstyles;
 }
+
 
 
 
